@@ -7,11 +7,14 @@ use App\Models\Profile;
 use App\Models\Pipeline;
 use App\Http\Requests\StageRequest;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\OpportunityRequest;
 use App\Http\Requests\ProfileRequest;
 use App\Http\Resources\StageResource;
 use App\Http\Requests\PipelineRequest;
+use App\Http\Resources\OpportunityResource;
 use App\Http\Resources\ProfileResource;
 use App\Http\Resources\PipelineResource;
+use App\Models\Opportunity;
 
 class BaseController extends Controller
 {
@@ -31,5 +34,11 @@ class BaseController extends Controller
     {
         $profile = Profile::create($request->validated());
         return ProfileResource::make($profile);
+    }
+
+    public function createOpportunity(OpportunityRequest $request)
+    {
+        $opportunity = Opportunity::create($request->validated());
+        return OpportunityResource::make($opportunity);
     }
 }
