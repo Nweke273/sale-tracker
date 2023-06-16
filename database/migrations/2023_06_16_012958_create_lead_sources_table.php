@@ -13,10 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('profiles', function (Blueprint $table) {
+        Schema::create('lead_sources', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->text('description')->nullable();
+            $table->string('type');
             $table->timestamps();
         });
     }
@@ -28,6 +28,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('profiles');
+        Schema::dropIfExists('lead_sources');
     }
 };

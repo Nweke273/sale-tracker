@@ -17,4 +17,14 @@ class Lead extends Model
         'city', 'state', 'postal_code', 'country', 'rating',
         'lead_status', 'loss_reason', 'lead_source', 'description'
     ];
+
+    public function opportunity()
+    {
+        return $this->hasMany(Opportunity::class);
+    }
+
+    public function contact()
+    {
+        return $this->hasOne(contact::class);
+    }
 }

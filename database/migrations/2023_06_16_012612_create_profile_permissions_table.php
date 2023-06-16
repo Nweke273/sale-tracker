@@ -13,10 +13,10 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('profiles', function (Blueprint $table) {
+        Schema::create('profile_permissions', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
-            $table->text('description')->nullable();
+            $table->foreignId('profile_id')->nullable();
+            $table->foreignId('permission_id')->nullable();
             $table->timestamps();
         });
     }
@@ -28,6 +28,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('profiles');
+        Schema::dropIfExists('profile_permissions');
     }
 };

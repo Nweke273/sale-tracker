@@ -13,10 +13,12 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('profiles', function (Blueprint $table) {
+        Schema::create('opportunity_stages', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
-            $table->text('description')->nullable();
+            $table->foreignId('opportunity_id')->nullable();
+            $table->foreignId('stage_id')->nullable();
+            $table->boolean('is_completed')->default('false');
+            $table->boolean('is_active')->nullable();
             $table->timestamps();
         });
     }
@@ -28,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('profiles');
+        Schema::dropIfExists('opportunity_stages');
     }
 };

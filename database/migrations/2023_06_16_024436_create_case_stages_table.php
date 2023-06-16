@@ -13,9 +13,12 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('opportunities', function (Blueprint $table) {
+        Schema::create('case_stages', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->foreignId('case_id')->nullable();
+            $table->foreignId('stage_id')->nullable();
+            $table->boolean('is_completed')->default('false');
+            $table->boolean('is_active')->default('false');
             $table->timestamps();
         });
     }
@@ -27,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('opportunities');
+        Schema::dropIfExists('case_stages');
     }
 };

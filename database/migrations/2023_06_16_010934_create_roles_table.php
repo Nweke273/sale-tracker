@@ -13,14 +13,12 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('lead_opportunities', function (Blueprint $table) {
+        Schema::create('roles', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('lead_id');
-            $table->foreignId('user_id');
-            $table->foreignId('stage_id');
-            $table->foreignId('opportunity_id');
-            $table->string('opportunity_status');
-            $table->foreignId('pipeline_id');
+            $table->string('title');
+            $table->text('description');
+            $table->foreignId('reports_to_role_id')->nullable();
+            $table->foreignId('reports_to_user_id')->nullable();
             $table->timestamps();
         });
     }
@@ -32,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('lead_opportunities');
+        Schema::dropIfExists('roles');
     }
 };

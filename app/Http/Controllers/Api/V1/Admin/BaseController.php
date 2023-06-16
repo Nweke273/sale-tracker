@@ -36,7 +36,7 @@ class BaseController extends Controller
         return ProfileResource::make($profile);
     }
 
-    public function createOpportunity(OpportunityRequest $request)
+    public function createOpportunityType(OpportunityRequest $request)
     {
         $opportunity = Opportunity::create($request->validated());
         return OpportunityResource::make($opportunity);

@@ -21,8 +21,10 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::post('admin/create-stage', [BaseController::class, 'createStage']);
     Route::post('admin/create-pipeline', [BaseController::class, 'createPipeline']);
     Route::post('admin/create-profile', [BaseController::class, 'createProfile']);
-    Route::post('admin/create-opportunity', [BaseController::class, 'createOpportunity']);
+    Route::post('admin/create-opportunity-type', [BaseController::class, 'createOpportunityType']);
     Route::post('admin/create-lead', [LeadController::class, 'createLead']);
+    Route::get('admin/leads', [LeadController::class, 'leads']);
+
     Route::post('admin/convert-lead', [LeadController::class, 'convertLeadToOpportunity']);
 
 });
