@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('opportunity_id')->nullable();
             $table->foreignId('stage_id')->nullable();
-            $table->boolean('is_completed')->default('false');
+            $table->boolean('is_completed')->default(false);
             $table->boolean('is_active')->nullable();
             $table->timestamps();
         });

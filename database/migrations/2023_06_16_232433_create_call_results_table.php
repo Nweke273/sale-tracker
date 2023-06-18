@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('call_results', function (Blueprint $table) {
             $table->id();
-            $table->title();
+            $table->string('title');
             $table->timestamps();
         });
     }

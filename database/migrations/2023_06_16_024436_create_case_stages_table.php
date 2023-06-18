@@ -17,8 +17,8 @@ return new class extends Migration
             $table->id();
             $table->foreignId('case_id')->nullable();
             $table->foreignId('stage_id')->nullable();
-            $table->boolean('is_completed')->default('false');
-            $table->boolean('is_active')->default('false');
+            $table->boolean('is_completed')->default(false);
+            $table->boolean('is_active')->default(false);
             $table->timestamps();
         });
     }
