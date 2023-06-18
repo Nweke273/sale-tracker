@@ -28,6 +28,9 @@ class DatabaseSeeder extends Seeder
             LossReasonSeeder::class,
             PipelineSeeder::class,
             RatingSeeder::class,
+            CaseTypeSeeder::class,
+            CaseOriginSeeder::class,
+            CaseReasonSeeder::class
         ]);
     }
 }
