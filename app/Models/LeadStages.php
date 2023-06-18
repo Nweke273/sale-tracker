@@ -8,4 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class LeadStages extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'title'
+    ];
 }

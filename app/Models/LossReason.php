@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class LossReason extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'name',
+    ];
 }

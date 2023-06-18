@@ -3,6 +3,11 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+
+use App\Models\Industry;
+use App\Models\LeadSource;
+use App\Models\LeadStages;
+use App\Models\Rating;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -15,14 +20,14 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         $this->call([
-            IndustrySeeder::class
+            AccountTypeSeeder::class,
+            DepartmentSeeder::class,
+            IndustrySeeder::class,
+            LeadSourceSeeder::class,
+            OpportunityTypeSeeder::class,
+            LossReasonSeeder::class,
+            PipelineSeeder::class,
+            RatingSeeder::class,
         ]);
-        // \App\Models\User::factory(10)->create();
-        // \App\Models\User::factory(10)->create();
-
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
     }
 }

@@ -5,11 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class createOpportunityType extends Model
+class OpportunityType extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'name',
+        'title',
     ];
 }
