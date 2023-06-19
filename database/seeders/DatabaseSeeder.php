@@ -30,7 +30,8 @@ class DatabaseSeeder extends Seeder
             RatingSeeder::class,
             CaseTypeSeeder::class,
             CaseOriginSeeder::class,
-            CaseReasonSeeder::class
+            CaseReasonSeeder::class,
+            JobTitleSeeder::class
         ]);
     }
 }
