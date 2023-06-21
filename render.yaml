@@ -1,0 +1,5 @@
+services:
+  - name: web
+    env:
+      - key: NODE_VERSION
+        value: 14.18.0
