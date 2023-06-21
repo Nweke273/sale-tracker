@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('event_statuses', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
+            $table->string('title')->nullable();
             $table->timestamps();
         });
     }

@@ -18,9 +18,9 @@ return new class extends Migration
             $table->foreignId('lead_id')->nullable();
             $table->foreignId('submitted_by_user_id')->nullable();
             $table->foreignId('submitted_to_user_id')->nullable();
-            $table->string('module');
-            $table->string('status');
-            $table->text('justification');
+            $table->string('module')->nullable();
+            $table->string('status')->nullable();
+            $table->text('justification')->nullable();
             $table->timestamps();
         });
     }

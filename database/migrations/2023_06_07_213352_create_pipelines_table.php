@@ -15,8 +15,8 @@ return new class extends Migration
     {
         Schema::create('pipelines', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
-            $table->string('type');
+            $table->string('name')->nullable();
+            $table->string('type')->nullable();
             $table->timestamps();
         });
     }

@@ -16,18 +16,16 @@ return new class extends Migration
         Schema::create('leads', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->nullable();
-            $table->foreignId('industry_id')->nullable();
-            $table->foreignId('job_title_id')->nullable();
-            $table->foreignId('rating_id')->nullable();
-            $table->foreignId('pipeline_id')->nullable();
-            $table->foreignId('loss_reason_id')->nullable();
-            $table->foreignId('lead_stage_id')->nullable();
-            $table->foreignId('lead_source')->nullable();
+            $table->foreignId('industry_id')->nullable()->constrained();
+            $table->foreignId('job_title_id')->nullable()->constrained();
+            $table->foreignId('rating_id')->nullable()->constrained();
+            $table->foreignId('pipeline_id')->nullable()->constrained();
+            $table->foreignId('loss_reason_id')->nullable()->constrained();
+            $table->foreignId('lead_source_id')->nullable()->constrained();
             $table->string('salutation')->nullable();
             $table->string('first_name')->nullable();
             $table->string('last_name')->nullable();
             $table->string('job_title')->nullable();
-            $table->string('industry')->nullable();
             $table->string('company')->nullable();
             $table->string('email')->nullable();
             $table->string('phone')->nullable();

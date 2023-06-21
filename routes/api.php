@@ -18,14 +18,14 @@ use \App\Http\Controllers\Api\V1\Admin\LeadController;
 */
 
 Route::middleware('auth:sanctum')->group(function () {
-    Route::post('admin/create-stage', [BaseController::class, 'createStage']);
-    Route::post('admin/create-pipeline', [BaseController::class, 'createPipeline']);
-    Route::post('admin/create-profile', [BaseController::class, 'createProfile']);
-    Route::post('admin/create-opportunity-type', [BaseController::class, 'createOpportunityType']);
-    Route::post('admin/create-lead', [LeadController::class, 'createLead']);
-    Route::get('admin/leads', [LeadController::class, 'leads']);
+    Route::post('/create-stage', [BaseController::class, 'createStage']);
+    Route::post('/create-pipeline', [BaseController::class, 'createPipeline']);
+    Route::post('/create-profile', [BaseController::class, 'createProfile']);
+    Route::post('/create-opportunity-type', [BaseController::class, 'createOpportunityType']);
+    Route::post('/create-lead', [LeadController::class, 'createLead']);
+    Route::get('/leads', [LeadController::class, 'leads']);
 
-    Route::post('admin/convert-lead', [LeadController::class, 'convertLeadToOpportunity']);
+    Route::post('/convert-lead', [LeadController::class, 'convertLeadToOpportunity']);
 
     Route::get('/industries', [BaseController::class, 'industries']);
     Route::get('/departments', [BaseController::class, 'departments']);

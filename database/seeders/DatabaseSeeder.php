@@ -8,6 +8,7 @@ use App\Models\Industry;
 use App\Models\LeadSource;
 use App\Models\LeadStages;
 use App\Models\Rating;
+use App\Models\Stage;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -31,7 +32,9 @@ class DatabaseSeeder extends Seeder
             CaseTypeSeeder::class,
             CaseOriginSeeder::class,
             CaseReasonSeeder::class,
-            JobTitleSeeder::class
+            JobTitleSeeder::class,
+            StageSeeder::class,
+            LeadSeeder::class
         ]);
     }
 }

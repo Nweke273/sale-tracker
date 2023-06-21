@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('meeting_statuses', function (Blueprint $table) {
             $table->id();
-            $table->string('title');
+            $table->string('title')->nullable();
             $table->timestamps();
         });
     }

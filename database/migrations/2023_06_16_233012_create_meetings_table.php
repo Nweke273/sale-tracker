@@ -15,17 +15,17 @@ return new class extends Migration
     {
         Schema::create('meetings', function (Blueprint $table) {
             $table->id();
-            $table->text('subject');
-            $table->text('location');
-            $table->dateTime('from');
-            $table->dateTime('to');
+            $table->text('subject')->nullable();
+            $table->text('location')->nullable();
+            $table->dateTime('from')->nullable();
+            $table->dateTime('to')->nullable();
             $table->foreignId('host_module')->nullable();
             $table->foreignId('host_record_id')->nullable();
             $table->foreignId('related_to')->nullable();
             $table->foreignId('related_record_id')->nullable();
-            $table->text('description');
+            $table->text('description')->nullable();
             $table->foreignId('reminder_id')->nullable();
-            $table->string('agenda');
+            $table->string('agenda')->nullable();
             $table->foreignId('meeting_purpose_id')->nullable();
             $table->foreignId('meeting_outcome_id')->nullable();
             $table->foreignId('meeting_status_id')->nullable();

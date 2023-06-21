@@ -12,4 +12,11 @@ class Industry extends Model
     protected $fillable = [
         'title'
     ];
+
+    public function leads()
+    {
+        return $this->hasMany(Lead::class);;
+    }
+
+    protected $table = 'industries';
 }

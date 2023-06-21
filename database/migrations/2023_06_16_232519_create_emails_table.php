@@ -15,10 +15,10 @@ return new class extends Migration
     {
         Schema::create('emails', function (Blueprint $table) {
             $table->id();
-            $table->dateTime('scheduled');
+            $table->dateTime('scheduled')->nullable();
             $table->foreignId('related_to')->nullable();
             $table->foreignId('related_record_id')->nullable();
-            $table->text('description');
+            $table->text('description')->nullable();
             $table->foreignId('reminder_id')->nullable();
             $table->timestamps();
         });

@@ -19,11 +19,11 @@ return new class extends Migration
             $table->foreignId('related_to')->nullable();
             $table->foreignId('related_record_id')->nullable();
             $table->foreignId('event_status_id')->nullable();
-            $table->dateTime('start');
-            $table->dateTime('end');
-            $table->text('subject');
-            $table->string('agenda');
-            $table->text('description');
+            $table->dateTime('start')->nullable();
+            $table->dateTime('end')->nullable();
+            $table->text('subject')->nullable();
+            $table->string('agenda')->nullable();
+            $table->text('description')->nullable();
             $table->foreignId('reminder_id')->nullable();
             $table->foreignId('event_purpose_id')->nullable();
             $table->foreignId('event_outcome_id')->nullable();

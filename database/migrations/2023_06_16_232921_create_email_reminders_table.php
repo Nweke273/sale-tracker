@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('email_reminders', function (Blueprint $table) {
             $table->id();
-            $table->string('varchar');
+            $table->string('varchar')->nullable();
             $table->timestamps();
         });
     }

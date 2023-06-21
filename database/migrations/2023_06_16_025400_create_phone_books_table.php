@@ -15,15 +15,15 @@ return new class extends Migration
     {
         Schema::create('phone_books', function (Blueprint $table) {
             $table->id();
-            $table->string('salutation');
-            $table->string('first_name');
-            $table->string('last_name');
-            $table->string('role');
-            $table->string('phone');
+            $table->string('salutation')->nullable();
+            $table->string('first_name')->nullable();
+            $table->string('last_name')->nullable();
+            $table->string('role')->nullable();
+            $table->string('phone')->nullable();
             $table->string('alt_phone')->nullable();
-            $table->string('email');
-            $table->string('contact_person');
-            $table->string('contact');
+            $table->string('email')->nullable();
+            $table->string('contact_person')->nullable();
+            $table->string('contact')->nullable();
             $table->timestamps();
         });
     }

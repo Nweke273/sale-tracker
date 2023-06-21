@@ -16,12 +16,12 @@ return new class extends Migration
         Schema::create('tasks', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->nullable();
-            $table->text('subject');
-            $table->dateTime('due_date');
+            $table->text('subject')->nullable();
+            $table->dateTime('due_date')->nullable();
             $table->foreignId('task_priority_id')->nullable();
             $table->foreignId('related_to')->nullable();
             $table->foreignId('related_record_id')->nullable();
-            $table->text('description');
+            $table->text('description')->nullable();
             $table->foreignId('reminder_id')->nullable();
             $table->foreignId('task_purpose_id')->nullable();
             $table->foreignId('task_outcome_id')->nullable();

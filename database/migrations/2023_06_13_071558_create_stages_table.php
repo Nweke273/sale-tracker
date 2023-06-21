@@ -13,12 +13,12 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('lead_stages', function (Blueprint $table) {
+        Schema::create('stages', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('lead_id')->nullable();
-            $table->foreignId('stage_id')->nullable();
-            $table->boolean('isCompleted')->default(false);
-            $table->boolean('is_active')->default(false);
+            $table->foreignId('pipeline_id')->nullable()->constrained();
+            $table->string('name')->nullable();
+            $table->string('type')->nullable();
+            $table->string('probability')->nullable();
             $table->timestamps();
         });
     }
@@ -30,6 +30,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('lead_stages');
+        Schema::dropIfExists('stages');
     }
 };

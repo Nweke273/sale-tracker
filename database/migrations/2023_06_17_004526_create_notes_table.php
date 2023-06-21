@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('related_to')->nullable();
             $table->foreignId('related_record_id')->nullable();
-            $table->string('title');
+            $table->string('title')->nullable();
             $table->timestamps();
         });
     }

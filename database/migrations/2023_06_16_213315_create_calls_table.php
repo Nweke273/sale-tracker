@@ -17,16 +17,16 @@ return new class extends Migration
             $table->id();
             $table->foreignId('related_to')->nullable();
             $table->foreignId('related_record_id')->nullable();
-            $table->string('type');
-            $table->string('status');
+            $table->string('type')->nullable();
+            $table->string('status')->nullable();
             $table->foreignId('user_id')->nullable();
             $table->string('subject')->nullable();
             $table->string('video_recording_url')->nullable();
             $table->foreignId('call_purpose_id')->nullable();
-            $table->text('agenda');
+            $table->text('agenda')->nullable();
             $table->foreignId('call_result_id')->nullable();
-            $table->text('description');
-            $table->foreignId('reminder_id');
+            $table->text('description')->nullable();
+            $table->foreignId('reminder_id')->nullable();
             $table->timestamps();
         });
     }
