@@ -16,7 +16,7 @@ class Lead extends Model
 
     protected $fillable = [
         'user_id', 'salutation',
-        'first_name', 'last_name', 'job_title_id',
+        'first_name', 'last_name', 'job_title_id', 'pipeline_id', 'alt_phone',
         'industry_id', 'company', 'email',
         'phone', 'website', 'street',
         'city', 'state', 'zip_code', 'country', 'rating_id',

@@ -25,7 +25,6 @@ return new class extends Migration
             $table->string('salutation')->nullable();
             $table->string('first_name')->nullable();
             $table->string('last_name')->nullable();
-            $table->string('job_title')->nullable();
             $table->string('company')->nullable();
             $table->string('email')->nullable();
             $table->string('phone')->nullable();

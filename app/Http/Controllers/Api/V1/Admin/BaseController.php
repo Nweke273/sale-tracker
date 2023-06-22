@@ -39,6 +39,11 @@ use App\Http\Resources\AccountTypeResource;
 use App\Http\Resources\OpportunityResource;
 use App\Http\Resources\OpportunityTypeResource;
 
+
+/**
+ * @group Master Data
+ */
+
 class BaseController extends Controller
 {
     public function createStage(stageRequest $request)

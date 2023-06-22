@@ -1,0 +1,621 @@
+openapi: 3.0.3
+info:
+  title: 'Sale Traker'
+  description: ''
+  version: 1.0.0
+servers:
+  -
+    url: 'http://localhost'
+paths:
+  /api/v1/auth/register:
+    post:
+      summary: ''
+      operationId: postApiV1AuthRegister
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Auth
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                salutation:
+                  type: string
+                  description: 'Must not be greater than 25 characters.'
+                  example: mjzrlgdueyxlfqcqrd
+                firstName:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: kdlnslgjxynkkvab
+                lastName:
+                  type: string
+                  description: 'Must not be greater than 255 characters.'
+                  example: gdhrtqvyarkny
+                roleId:
+                  type: integer
+                  description: 'Must not be greater than 255.'
+                  example: 16
+                profileId:
+                  type: integer
+                  description: 'Must not be greater than 255.'
+                  example: 3
+                email:
+                  type: string
+                  description: 'Must be a valid email address. Must not be greater than 255 characters.'
+                  example: delia34@example.com
+                password:
+                  type: string
+                  description: ''
+                  example: illum
+              required:
+                - salutation
+                - firstName
+                - lastName
+                - roleId
+                - profileId
+                - email
+                - password
+      security: []
+  /api/v1/auth/login:
+    post:
+      summary: ''
+      operationId: postApiV1AuthLogin
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Auth
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                email:
+                  type: string
+                  description: 'Must be a valid email address.'
+                  example: roderick83@example.net
+                password:
+                  type: string
+                  description: ''
+                  example: et
+              required:
+                - email
+                - password
+      security: []
+  /api/v1/create-lead:
+    post:
+      summary: ''
+      operationId: postApiV1CreateLead
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Lead
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                user_id:
+                  type: string
+                  description: ''
+                  example: null
+                salutation:
+                  type: string
+                  description: ''
+                  example: null
+                first_name:
+                  type: string
+                  description: ''
+                  example: null
+                last_name:
+                  type: string
+                  description: 'Must not be greater than 50 characters.'
+                  example: jdywpedbgxoprzfzjhbwa
+                job_title_id:
+                  type: string
+                  description: ''
+                  example: null
+                industry_id:
+                  type: string
+                  description: 'Must not be greater than 50 characters.'
+                  example: tjltchdyeoxqblndlrb
+                company:
+                  type: string
+                  description: 'Must not be greater than 50 characters.'
+                  example: ktmliqrpevgdvnulo
+                rating_id:
+                  type: string
+                  description: ''
+                  example: null
+                pipeline_id:
+                  type: string
+                  description: ''
+                  example: null
+                email:
+                  type: string
+                  description: ''
+                  example: null
+                phone:
+                  type: string
+                  description: ''
+                  example: null
+                website:
+                  type: string
+                  description: ''
+                  example: null
+                street:
+                  type: string
+                  description: ''
+                  example: null
+                city:
+                  type: string
+                  description: ''
+                  example: null
+                state:
+                  type: string
+                  description: ''
+                  example: null
+                zip_code:
+                  type: string
+                  description: ''
+                  example: null
+                country:
+                  type: string
+                  description: ''
+                  example: null
+                rating:
+                  type: string
+                  description: ''
+                  example: null
+                lead_status_id:
+                  type: string
+                  description: ''
+                  example: null
+                loss_reason_id:
+                  type: string
+                  description: ''
+                  example: null
+                lead_source_id:
+                  type: string
+                  description: ''
+                  example: null
+                description:
+                  type: string
+                  description: ''
+                  example: null
+      security: []
+  /api/v1/leads:
+    get:
+      summary: ''
+      operationId: getApiV1Leads
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Lead
+      security: []
+  '/api/v1/leads/{id}':
+    get:
+      summary: ''
+      operationId: getApiV1LeadsId
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Lead
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the lead.'
+        example: sed
+        required: true
+        schema:
+          type: string
+  '/api/v1/leads/{id}/update':
+    put:
+      summary: ''
+      operationId: putApiV1LeadsIdUpdate
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Lead
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                user_id:
+                  type: string
+                  description: ''
+                  example: null
+                salutation:
+                  type: string
+                  description: ''
+                  example: null
+                first_name:
+                  type: string
+                  description: ''
+                  example: null
+                last_name:
+                  type: string
+                  description: 'Must not be greater than 50 characters.'
+                  example: vd
+                job_title_id:
+                  type: string
+                  description: ''
+                  example: null
+                industry_id:
+                  type: string
+                  description: 'Must not be greater than 50 characters.'
+                  example: vruyzdgll
+                company:
+                  type: string
+                  description: 'Must not be greater than 50 characters.'
+                  example: wlx
+                rating_id:
+                  type: string
+                  description: ''
+                  example: null
+                pipeline_id:
+                  type: string
+                  description: ''
+                  example: null
+                email:
+                  type: string
+                  description: ''
+                  example: null
+                phone:
+                  type: string
+                  description: ''
+                  example: null
+                website:
+                  type: string
+                  description: ''
+                  example: null
+                street:
+                  type: string
+                  description: ''
+                  example: null
+                city:
+                  type: string
+                  description: ''
+                  example: null
+                state:
+                  type: string
+                  description: ''
+                  example: null
+                zip_code:
+                  type: string
+                  description: ''
+                  example: null
+                country:
+                  type: string
+                  description: ''
+                  example: null
+                rating:
+                  type: string
+                  description: ''
+                  example: null
+                lead_status_id:
+                  type: string
+                  description: ''
+                  example: null
+                loss_reason_id:
+                  type: string
+                  description: ''
+                  example: null
+                lead_source_id:
+                  type: string
+                  description: ''
+                  example: null
+                description:
+                  type: string
+                  description: ''
+                  example: null
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the lead.'
+        example: delectus
+        required: true
+        schema:
+          type: string
+  '/api/v1/leads/{id}/delete':
+    delete:
+      summary: ''
+      operationId: deleteApiV1LeadsIdDelete
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Lead
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the lead.'
+        example: et
+        required: true
+        schema:
+          type: string
+  /api/v1/convert-lead:
+    post:
+      summary: ''
+      operationId: postApiV1ConvertLead
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Lead
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: ''
+                  example: voluptatem
+              required:
+                - name
+      security: []
+  /api/v1/create-stage:
+    post:
+      summary: ''
+      operationId: postApiV1CreateStage
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - 'Master Data'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: ''
+                  example: non
+              required:
+                - name
+      security: []
+  /api/v1/create-pipeline:
+    post:
+      summary: ''
+      operationId: postApiV1CreatePipeline
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - 'Master Data'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: ''
+                  example: sit
+              required:
+                - name
+      security: []
+  /api/v1/create-profile:
+    post:
+      summary: ''
+      operationId: postApiV1CreateProfile
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - 'Master Data'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: ''
+                  example: inventore
+              required:
+                - name
+      security: []
+  /api/v1/create-opportunity-type:
+    post:
+      summary: ''
+      operationId: postApiV1CreateOpportunityType
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - 'Master Data'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                name:
+                  type: string
+                  description: ''
+                  example: reiciendis
+              required:
+                - name
+      security: []
+  /api/v1/industries:
+    get:
+      summary: ''
+      operationId: getApiV1Industries
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - 'Master Data'
+      security: []
+  /api/v1/departments:
+    get:
+      summary: ''
+      operationId: getApiV1Departments
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - 'Master Data'
+      security: []
+  /api/v1/pipelines:
+    get:
+      summary: ''
+      operationId: getApiV1Pipelines
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - 'Master Data'
+      security: []
+  /api/v1/account-types:
+    get:
+      summary: ''
+      operationId: getApiV1AccountTypes
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - 'Master Data'
+      security: []
+  /api/v1/case-origins:
+    get:
+      summary: ''
+      operationId: getApiV1CaseOrigins
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - 'Master Data'
+      security: []
+  /api/v1/case-types:
+    get:
+      summary: ''
+      operationId: getApiV1CaseTypes
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - 'Master Data'
+      security: []
+  /api/v1/case-reasons:
+    get:
+      summary: ''
+      operationId: getApiV1CaseReasons
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - 'Master Data'
+      security: []
+  /api/v1/lead-sources:
+    get:
+      summary: ''
+      operationId: getApiV1LeadSources
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - 'Master Data'
+      security: []
+  /api/v1/loss-reasons:
+    get:
+      summary: ''
+      operationId: getApiV1LossReasons
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - 'Master Data'
+      security: []
+  /api/v1/opportunity-types:
+    get:
+      summary: ''
+      operationId: getApiV1OpportunityTypes
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - 'Master Data'
+      security: []
+  /api/v1/ratings:
+    get:
+      summary: ''
+      operationId: getApiV1Ratings
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - 'Master Data'
+      security: []
+  /api/v1/stages:
+    get:
+      summary: ''
+      operationId: getApiV1Stages
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - 'Master Data'
+      security: []
+  /api/v1/job-titles:
+    get:
+      summary: ''
+      operationId: getApiV1JobTitles
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - 'Master Data'
+      security: []
+tags:
+  -
+    name: Auth
+    description: ''
+  -
+    name: Lead
+    description: ''
+  -
+    name: 'Master Data'
+    description: ''
+components:
+  securitySchemes:
+    default:
+      type: http
+      scheme: bearer
+      description: ''
+security:
+  -
+    default: []

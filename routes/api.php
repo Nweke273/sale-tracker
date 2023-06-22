@@ -24,9 +24,11 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::post('/create-opportunity-type', [BaseController::class, 'createOpportunityType']);
     Route::post('/create-lead', [LeadController::class, 'createLead']);
     Route::get('/leads', [LeadController::class, 'leads']);
+    Route::get('/leads/{id}', [LeadController::class, 'singleLead']);
+    Route::put('/leads/{id}/update', [LeadController::class, 'updateLead']);
+    Route::delete('/leads/{id}/delete', [LeadController::class, 'deleteLead']);
 
     Route::post('/convert-lead', [LeadController::class, 'convertLeadToOpportunity']);
-
     Route::get('/industries', [BaseController::class, 'industries']);
     Route::get('/departments', [BaseController::class, 'departments']);
     Route::get('/pipelines', [BaseController::class, 'pipelines']);
