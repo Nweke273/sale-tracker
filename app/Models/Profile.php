@@ -10,8 +10,7 @@ class Profile extends Model
     use HasFactory;
 
     protected $fillable = [
-        'name',
-        'clone_profile',
+        'title',
         'description'
     ];
 }

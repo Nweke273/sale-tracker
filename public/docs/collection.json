@@ -9,8 +9,8 @@
         }
     ],
     "info": {
-        "name": "Sale Traker",
-        "_postman_id": "2038f1fb-c926-4ccf-9ceb-0c12d09d0a1c",
+        "name": "Laravel",
+        "_postman_id": "0bcb3532-7e6e-4679-8365-9debbda527e9",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -41,7 +41,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"salutation\":\"mjzrlgdueyxlfqcqrd\",\"firstName\":\"kdlnslgjxynkkvab\",\"lastName\":\"gdhrtqvyarkny\",\"roleId\":16,\"profileId\":3,\"email\":\"delia34@example.com\",\"password\":\"illum\"}"
+                            "raw": "{\"salutation\":\"vsctcjbjdhqfjdq\",\"firstName\":\"vfrmroftuojeegdczj\",\"lastName\":\"qodounxgn\",\"roleId\":2,\"profileId\":9,\"email\":\"zion.okon@example.net\",\"password\":\"velit\"}"
                         },
                         "description": "",
                         "auth": {
@@ -72,7 +72,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"email\":\"roderick83@example.net\",\"password\":\"et\"}"
+                            "raw": "{\"email\":\"dibbert.dedric@example.org\",\"password\":\"id\"}"
                         },
                         "description": "",
                         "auth": {
@@ -109,7 +109,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"last_name\":\"jdywpedbgxoprzfzjhbwa\",\"industry_id\":\"tjltchdyeoxqblndlrb\",\"company\":\"ktmliqrpevgdvnulo\"}"
+                            "raw": "{\"last_name\":\"butwpxutjpzcwcssshyhtjt\",\"industry_id\":\"ozf\",\"company\":\"wqyghwdsiobppoxruvdvl\"}"
                         },
                         "description": "",
                         "auth": {
@@ -158,7 +158,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "sed",
+                                    "value": "quis",
                                     "description": "The ID of the lead."
                                 }
                             ]
@@ -194,7 +194,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "delectus",
+                                    "value": "debitis",
                                     "description": "The ID of the lead."
                                 }
                             ]
@@ -212,7 +212,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"last_name\":\"vd\",\"industry_id\":\"vruyzdgll\",\"company\":\"wlx\"}"
+                            "raw": "{\"last_name\":\"drybmtwvmnbcug\",\"industry_id\":\"bgpdat\",\"company\":\"vxqdabrnwxycce\"}"
                         },
                         "description": "",
                         "auth": {
@@ -233,7 +233,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "et",
+                                    "value": "fuga",
                                     "description": "The ID of the lead."
                                 }
                             ]
@@ -258,13 +258,21 @@
                     "response": []
                 },
                 {
-                    "name": "POST api\/v1\/convert-lead",
+                    "name": "POST api\/v1\/convert-lead\/{id}",
                     "request": {
                         "url": {
                             "host": "{{baseUrl}}",
-                            "path": "api\/v1\/convert-lead",
+                            "path": "api\/v1\/convert-lead\/:id",
                             "query": [],
-                            "raw": "{{baseUrl}}\/api\/v1\/convert-lead"
+                            "raw": "{{baseUrl}}\/api\/v1\/convert-lead\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "est",
+                                    "description": "The ID of the convert lead."
+                                }
+                            ]
                         },
                         "method": "POST",
                         "header": [
@@ -277,10 +285,279 @@
                                 "value": "application\/json"
                             }
                         ],
-                        "body": {
-                            "mode": "raw",
-                            "raw": "{\"name\":\"voluptatem\"}"
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET api\/v1\/accounts\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/accounts\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/accounts\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "occaecati",
+                                    "description": "The ID of the account."
+                                }
+                            ]
                         },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "PUT api\/v1\/accounts\/{id}\/update",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/accounts\/:id\/update",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/accounts\/:id\/update",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "ut",
+                                    "description": "The ID of the account."
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "DELETE api\/v1\/accounts\/{id}\/delete",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/accounts\/:id\/delete",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/accounts\/:id\/delete",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "temporibus",
+                                    "description": "The ID of the account."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET api\/v1\/accounts",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/accounts",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/accounts"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET api\/v1\/contacts\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/contacts\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/contacts\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "quis",
+                                    "description": "The ID of the contact."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "PUT api\/v1\/contacts\/{id}\/update",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/contacts\/:id\/update",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/contacts\/:id\/update",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "voluptas",
+                                    "description": "The ID of the contact."
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "DELETE api\/v1\/contacts\/{id}\/delete",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/contacts\/:id\/delete",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/contacts\/:id\/delete",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "ut",
+                                    "description": "The ID of the contact."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET api\/v1\/contacts",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/contacts",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/contacts"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
                         "description": "",
                         "auth": {
                             "type": "noauth"
@@ -316,7 +593,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"non\"}"
+                            "raw": "{\"name\":\"natus\"}"
                         },
                         "description": "",
                         "auth": {
@@ -347,7 +624,38 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"sit\"}"
+                            "raw": "{\"name\":\"eum\"}"
+                        },
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "POST api\/v1\/create-role",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/create-role",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/create-role"
+                        },
+                        "method": "POST",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"odio\"}"
                         },
                         "description": "",
                         "auth": {
@@ -378,7 +686,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"inventore\"}"
+                            "raw": "{\"name\":\"autem\"}"
                         },
                         "description": "",
                         "auth": {
@@ -409,7 +717,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"reiciendis\"}"
+                            "raw": "{\"name\":\"pariatur\"}"
                         },
                         "description": "",
                         "auth": {

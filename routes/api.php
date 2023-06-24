@@ -20,6 +20,7 @@ use \App\Http\Controllers\Api\V1\Admin\LeadController;
 Route::middleware('auth:sanctum')->group(function () {
     Route::post('/create-stage', [BaseController::class, 'createStage']);
     Route::post('/create-pipeline', [BaseController::class, 'createPipeline']);
+    Route::post('/create-role', [BaseController::class, 'createRole']);
     Route::post('/create-profile', [BaseController::class, 'createProfile']);
     Route::post('/create-opportunity-type', [BaseController::class, 'createOpportunityType']);
     Route::post('/create-lead', [LeadController::class, 'createLead']);

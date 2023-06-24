@@ -11,8 +11,4 @@ class Rating extends Model
     protected $fillable = [
         'title'
     ];
-
-    public function lead(){
-        
-    }
 }
