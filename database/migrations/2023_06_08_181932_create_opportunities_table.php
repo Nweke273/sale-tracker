@@ -26,9 +26,10 @@ return new class extends Migration
             $table->foreignId('rating_id')->nullable();
             $table->string('opportunity_stage')->nullable();
             $table->foreignId('pipeline_id')->nullable();
+            $table->foreignId('quote_id')->nullable();
             $table->foreignId('loss_reason_id')->nullable();
             $table->text('description')->nullable();
-            $table->double('expected_amount')->default(0.00);
+            $table->double('expected_amount')->default(0.00)->nullable();
             $table->timestamps();
         });
     }

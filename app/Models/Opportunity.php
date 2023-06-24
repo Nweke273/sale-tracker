@@ -10,12 +10,19 @@ class Opportunity extends Model
     use HasFactory;
 
     protected $fillable = [
+        'name',
         'lead_id',
+        'expected_amount',
+        'contact_id',
+        'industry_id',
+        'opportunity_type_id',
         'user_id',
-        'stage_id',
-        'opportunity_id',
-        'opportunity_status',
-        'pipeline_id'
+        'lead_source_id',
+        'rating_id',
+        'pipeline_id',
+        'loss_reason_id',
+        'quote_id',
+        'description'
     ];
 
     public function lead()
