@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Lead;
+use App\Models\Cases;
 use App\Models\Account;
 use App\Models\Contact;
 use App\Models\Opportunity;
@@ -73,7 +74,7 @@ class Controller extends BaseController
             'website' => $lead->website,
         ]);
 
-        Opportunity::create([
+        $opportunity = Opportunity::create([
             'name' => $request->name,
             'lead_id' => $lead->id,
             'expected_amount' => $request->expected_amount,
@@ -88,6 +89,18 @@ class Controller extends BaseController
             'quote_id' => $request->quote_id,
             'description' => $request->description
         ]);
+
+        Cases::create([
+            'opportunity_id' => $opportunity->id,
+            'name' => $request->name,
+            'case_type_id' => $request->case_type_id,
+            'case_origin_id' => $request->case_origin_id,
+            'priority_id' => $request->priority_id,
+            'pipeline_id' => $request->pipeline_id,
+            'case_reason_id' => $request->case_reason_id,
+            'description' => $request->description,
+            'internal_comments' => $request->internal_comment,
+            'lessons_learned' => $request->lessons_learned
+        ]);
     }
 }
-

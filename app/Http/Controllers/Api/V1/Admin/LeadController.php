@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Api\V1\Admin;
 
 use App\Models\Lead;
+use App\Models\Cases;
 use App\Models\Account;
 use App\Models\Contact;
 use App\Models\Opportunity;
@@ -10,6 +11,7 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use App\Http\Requests\LeadRequest;
 use App\Http\Controllers\Controller;
+use App\Http\Resources\CaseResource;
 use App\Http\Resources\LeadResource;
 use App\Http\Resources\AccountResource;
 use App\Http\Resources\ContactResource;
@@ -111,6 +113,31 @@ class LeadController extends BaseController
     public function deleteContact($id)
     {
         Contact::find($id)->delete();
+        return response()->noContent();
+    }
+
+
+    //Case
+    public function cases()
+    {
+        return CaseResource::collection(Cases::all());
+    }
+
+    public function updateCase(Request $request, $id)
+    {
+        $case = Cases::find($id);
+        $case->update($request->all());
+        return response()->json(CaseResource::make($case), Response::HTTP_ACCEPTED);
+    }
+
+    public function leadCase($id)
+    {
+        return CaseResource::make(Cases::find($id));
+    }
+
+    public function deleteCase($id)
+    {
+        Cases::find($id)->delete();
         return response()->noContent();
     }
 }
