@@ -28,11 +28,11 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: non
+        example: natus
         type: string
         custom: []
     cleanBodyParameters:
-      name: non
+      name: natus
     fileParameters: []
     responses: []
     responseFields: []
@@ -66,11 +66,49 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: sit
+        example: eum
         type: string
         custom: []
     cleanBodyParameters:
-      name: sit
+      name: eum
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - POST
+    uri: api/v1/create-role
+    metadata:
+      groupName: 'Master Data'
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters:
+      name:
+        name: name
+        description: ''
+        required: true
+        example: odio
+        type: string
+        custom: []
+    cleanBodyParameters:
+      name: odio
     fileParameters: []
     responses: []
     responseFields: []
@@ -104,11 +142,11 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: inventore
+        example: autem
         type: string
         custom: []
     cleanBodyParameters:
-      name: inventore
+      name: autem
     fileParameters: []
     responses: []
     responseFields: []
@@ -142,11 +180,11 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: reiciendis
+        example: pariatur
         type: string
         custom: []
     cleanBodyParameters:
-      name: reiciendis
+      name: pariatur
     fileParameters: []
     responses: []
     responseFields: []

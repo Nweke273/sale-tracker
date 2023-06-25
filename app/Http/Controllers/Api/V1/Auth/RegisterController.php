@@ -24,8 +24,8 @@ class RegisterController extends Controller
             'salutation' => ['required', 'string', 'max:25'],
             'firstName' => ['required', 'string', 'max:255'],
             'lastName' => ['required', 'string', 'max:255'],
-            'roleId' => ['required', 'int', 'max:255'],
-            'profileId' => ['required', 'int', 'max:255'],
+            'roleId' => ['required', 'int', 'max:255', 'exists:roles,id'],
+            'profileId' => ['required', 'int', 'max:255', 'exists:profiles,id'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'confirmed', Password::defaults()],
         ]);

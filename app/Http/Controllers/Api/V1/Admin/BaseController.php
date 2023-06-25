@@ -30,6 +30,7 @@ use App\Http\Resources\IndustryResource;
 use App\Http\Resources\JobTitleResource;
 use App\Http\Resources\PipelineResource;
 use App\Http\Requests\OpportunityRequest;
+use App\Http\Requests\RoleRequest;
 use App\Http\Resources\CaseOriginResource;
 use App\Http\Resources\CaseReasonResource;
 use App\Http\Resources\DepartmentResource;
@@ -38,7 +39,8 @@ use App\Http\Resources\LossReasonResource;
 use App\Http\Resources\AccountTypeResource;
 use App\Http\Resources\OpportunityResource;
 use App\Http\Resources\OpportunityTypeResource;
-
+use App\Http\Resources\RoleResource;
+use App\Models\Role;
 
 /**
  * @group Master Data
@@ -46,7 +48,13 @@ use App\Http\Resources\OpportunityTypeResource;
 
 class BaseController extends Controller
 {
-    public function createStage(stageRequest $request)
+    public function createRole(RoleRequest $request)
+    {
+        $role = Role::create($request->validated());
+        return RoleResource::make($role);
+    }
+
+    public function createStage(StageRequest $request)
     {
         $stage = Stage::create($request->validated());
         return StageResource::make($stage);
