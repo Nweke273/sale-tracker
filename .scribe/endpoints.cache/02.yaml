@@ -28,59 +28,59 @@ endpoints:
         name: salutation
         description: 'Must not be greater than 25 characters.'
         required: true
-        example: vsctcjbjdhqfjdq
+        example: pbrfcwegkdkq
         type: string
         custom: []
       firstName:
         name: firstName
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: vfrmroftuojeegdczj
+        example: nkiqfilgrrhubgqfy
         type: string
         custom: []
       lastName:
         name: lastName
         description: 'Must not be greater than 255 characters.'
         required: true
-        example: qodounxgn
+        example: ueyveo
         type: string
         custom: []
       roleId:
         name: roleId
         description: 'Must not be greater than 255.'
         required: true
-        example: 2
+        example: 8
         type: integer
         custom: []
       profileId:
         name: profileId
         description: 'Must not be greater than 255.'
         required: true
-        example: 9
+        example: 17
         type: integer
         custom: []
       email:
         name: email
         description: 'Must be a valid email address. Must not be greater than 255 characters.'
         required: true
-        example: zion.okon@example.net
+        example: veum.modesto@example.org
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: velit
+        example: perspiciatis
         type: string
         custom: []
     cleanBodyParameters:
-      salutation: vsctcjbjdhqfjdq
-      firstName: vfrmroftuojeegdczj
-      lastName: qodounxgn
-      roleId: 2
-      profileId: 9
-      email: zion.okon@example.net
-      password: velit
+      salutation: pbrfcwegkdkq
+      firstName: nkiqfilgrrhubgqfy
+      lastName: ueyveo
+      roleId: 8
+      profileId: 17
+      email: veum.modesto@example.org
+      password: perspiciatis
     fileParameters: []
     responses: []
     responseFields: []
@@ -114,19 +114,19 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: dibbert.dedric@example.org
+        example: demetrius04@example.com
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: id
+        example: aut
         type: string
         custom: []
     cleanBodyParameters:
-      email: dibbert.dedric@example.org
-      password: id
+      email: demetrius04@example.com
+      password: aut
     fileParameters: []
     responses: []
     responseFields: []

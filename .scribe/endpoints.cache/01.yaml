@@ -49,7 +49,7 @@ endpoints:
         name: last_name
         description: 'Must not be greater than 50 characters.'
         required: false
-        example: butwpxutjpzcwcssshyhtjt
+        example: ejfl
         type: string
         custom: []
       job_title_id:
@@ -63,14 +63,14 @@ endpoints:
         name: industry_id
         description: 'Must not be greater than 50 characters.'
         required: false
-        example: ozf
+        example: acgoklbiqjnkrye
         type: string
         custom: []
       company:
         name: company
         description: 'Must not be greater than 50 characters.'
         required: false
-        example: wqyghwdsiobppoxruvdvl
+        example: cqcwfpxanf
         type: string
         custom: []
       rating_id:
@@ -179,9 +179,9 @@ endpoints:
         type: string
         custom: []
     cleanBodyParameters:
-      last_name: butwpxutjpzcwcssshyhtjt
-      industry_id: ozf
-      company: wqyghwdsiobppoxruvdvl
+      last_name: ejfl
+      industry_id: acgoklbiqjnkrye
+      company: cqcwfpxanf
     fileParameters: []
     responses: []
     responseFields: []
@@ -241,11 +241,11 @@ endpoints:
         name: id
         description: 'The ID of the lead.'
         required: true
-        example: quis
+        example: recusandae
         type: string
         custom: []
     cleanUrlParameters:
-      id: quis
+      id: recusandae
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -279,11 +279,11 @@ endpoints:
         name: id
         description: 'The ID of the lead.'
         required: true
-        example: debitis
+        example: reprehenderit
         type: string
         custom: []
     cleanUrlParameters:
-      id: debitis
+      id: reprehenderit
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters:
@@ -312,7 +312,7 @@ endpoints:
         name: last_name
         description: 'Must not be greater than 50 characters.'
         required: false
-        example: drybmtwvmnbcug
+        example: drycbwe
         type: string
         custom: []
       job_title_id:
@@ -326,14 +326,14 @@ endpoints:
         name: industry_id
         description: 'Must not be greater than 50 characters.'
         required: false
-        example: bgpdat
+        example: zqkxejzinjgre
         type: string
         custom: []
       company:
         name: company
         description: 'Must not be greater than 50 characters.'
         required: false
-        example: vxqdabrnwxycce
+        example: tnuzzakqxswcdc
         type: string
         custom: []
       rating_id:
@@ -442,9 +442,9 @@ endpoints:
         type: string
         custom: []
     cleanBodyParameters:
-      last_name: drybmtwvmnbcug
-      industry_id: bgpdat
-      company: vxqdabrnwxycce
+      last_name: drycbwe
+      industry_id: zqkxejzinjgre
+      company: tnuzzakqxswcdc
     fileParameters: []
     responses: []
     responseFields: []
@@ -474,11 +474,11 @@ endpoints:
         name: id
         description: 'The ID of the lead.'
         required: true
-        example: fuga
+        example: corporis
         type: string
         custom: []
     cleanUrlParameters:
-      id: fuga
+      id: corporis
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -512,11 +512,11 @@ endpoints:
         name: id
         description: 'The ID of the convert lead.'
         required: true
-        example: est
+        example: natus
         type: string
         custom: []
     cleanUrlParameters:
-      id: est
+      id: natus
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -550,11 +550,11 @@ endpoints:
         name: id
         description: 'The ID of the account.'
         required: true
-        example: occaecati
+        example: delectus
         type: string
         custom: []
     cleanUrlParameters:
-      id: occaecati
+      id: delectus
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -588,11 +588,11 @@ endpoints:
         name: id
         description: 'The ID of the account.'
         required: true
-        example: ut
+        example: magnam
         type: string
         custom: []
     cleanUrlParameters:
-      id: ut
+      id: magnam
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -626,11 +626,11 @@ endpoints:
         name: id
         description: 'The ID of the account.'
         required: true
-        example: temporibus
+        example: est
         type: string
         custom: []
     cleanUrlParameters:
-      id: temporibus
+      id: est
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -694,11 +694,11 @@ endpoints:
         name: id
         description: 'The ID of the contact.'
         required: true
-        example: quis
+        example: quia
         type: string
         custom: []
     cleanUrlParameters:
-      id: quis
+      id: quia
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -732,11 +732,11 @@ endpoints:
         name: id
         description: 'The ID of the contact.'
         required: true
-        example: voluptas
+        example: molestias
         type: string
         custom: []
     cleanUrlParameters:
-      id: voluptas
+      id: molestias
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -770,11 +770,11 @@ endpoints:
         name: id
         description: 'The ID of the contact.'
         required: true
-        example: ut
+        example: quasi
         type: string
         custom: []
     cleanUrlParameters:
-      id: ut
+      id: quasi
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters: []
@@ -791,6 +791,150 @@ endpoints:
     httpMethods:
       - GET
     uri: api/v1/contacts
+    metadata:
+      groupName: Lead
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters: []
+    cleanUrlParameters: []
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: 'api/v1/cases/{id}'
+    metadata:
+      groupName: Lead
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the case.'
+        required: true
+        example: ipsum
+        type: string
+        custom: []
+    cleanUrlParameters:
+      id: ipsum
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - PUT
+    uri: 'api/v1/cases/{id}/update'
+    metadata:
+      groupName: Lead
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the case.'
+        required: true
+        example: quia
+        type: string
+        custom: []
+    cleanUrlParameters:
+      id: quia
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - DELETE
+    uri: 'api/v1/cases/{id}/delete'
+    metadata:
+      groupName: Lead
+      groupDescription: ''
+      subgroup: ''
+      subgroupDescription: ''
+      title: ''
+      description: ''
+      authenticated: false
+      custom: []
+    headers:
+      Content-Type: application/json
+      Accept: application/json
+    urlParameters:
+      id:
+        name: id
+        description: 'The ID of the case.'
+        required: true
+        example: deleniti
+        type: string
+        custom: []
+    cleanUrlParameters:
+      id: deleniti
+    queryParameters: []
+    cleanQueryParameters: []
+    bodyParameters: []
+    cleanBodyParameters: []
+    fileParameters: []
+    responses: []
+    responseFields: []
+    auth: []
+    controller: null
+    method: null
+    route: null
+    custom: []
+  -
+    httpMethods:
+      - GET
+    uri: api/v1/cases
     metadata:
       groupName: Lead
       groupDescription: ''

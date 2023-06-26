@@ -9,8 +9,8 @@
         }
     ],
     "info": {
-        "name": "Laravel",
-        "_postman_id": "0bcb3532-7e6e-4679-8365-9debbda527e9",
+        "name": "Sale Traker",
+        "_postman_id": "83849cdd-f000-4fae-8904-4877ca080a63",
         "description": "",
         "schema": "https:\/\/schema.getpostman.com\/json\/collection\/v2.1.0\/collection.json"
     },
@@ -41,7 +41,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"salutation\":\"vsctcjbjdhqfjdq\",\"firstName\":\"vfrmroftuojeegdczj\",\"lastName\":\"qodounxgn\",\"roleId\":2,\"profileId\":9,\"email\":\"zion.okon@example.net\",\"password\":\"velit\"}"
+                            "raw": "{\"salutation\":\"pbrfcwegkdkq\",\"firstName\":\"nkiqfilgrrhubgqfy\",\"lastName\":\"ueyveo\",\"roleId\":8,\"profileId\":17,\"email\":\"veum.modesto@example.org\",\"password\":\"perspiciatis\"}"
                         },
                         "description": "",
                         "auth": {
@@ -72,7 +72,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"email\":\"dibbert.dedric@example.org\",\"password\":\"id\"}"
+                            "raw": "{\"email\":\"demetrius04@example.com\",\"password\":\"aut\"}"
                         },
                         "description": "",
                         "auth": {
@@ -109,7 +109,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"last_name\":\"butwpxutjpzcwcssshyhtjt\",\"industry_id\":\"ozf\",\"company\":\"wqyghwdsiobppoxruvdvl\"}"
+                            "raw": "{\"last_name\":\"ejfl\",\"industry_id\":\"acgoklbiqjnkrye\",\"company\":\"cqcwfpxanf\"}"
                         },
                         "description": "",
                         "auth": {
@@ -158,7 +158,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "quis",
+                                    "value": "recusandae",
                                     "description": "The ID of the lead."
                                 }
                             ]
@@ -194,7 +194,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "debitis",
+                                    "value": "reprehenderit",
                                     "description": "The ID of the lead."
                                 }
                             ]
@@ -212,7 +212,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"last_name\":\"drybmtwvmnbcug\",\"industry_id\":\"bgpdat\",\"company\":\"vxqdabrnwxycce\"}"
+                            "raw": "{\"last_name\":\"drycbwe\",\"industry_id\":\"zqkxejzinjgre\",\"company\":\"tnuzzakqxswcdc\"}"
                         },
                         "description": "",
                         "auth": {
@@ -233,7 +233,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "fuga",
+                                    "value": "corporis",
                                     "description": "The ID of the lead."
                                 }
                             ]
@@ -269,7 +269,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "est",
+                                    "value": "natus",
                                     "description": "The ID of the convert lead."
                                 }
                             ]
@@ -305,7 +305,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "occaecati",
+                                    "value": "delectus",
                                     "description": "The ID of the account."
                                 }
                             ]
@@ -341,7 +341,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "ut",
+                                    "value": "magnam",
                                     "description": "The ID of the account."
                                 }
                             ]
@@ -377,7 +377,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "temporibus",
+                                    "value": "est",
                                     "description": "The ID of the account."
                                 }
                             ]
@@ -441,7 +441,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "quis",
+                                    "value": "quia",
                                     "description": "The ID of the contact."
                                 }
                             ]
@@ -477,7 +477,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "voluptas",
+                                    "value": "molestias",
                                     "description": "The ID of the contact."
                                 }
                             ]
@@ -513,7 +513,7 @@
                                 {
                                     "id": "id",
                                     "key": "id",
-                                    "value": "ut",
+                                    "value": "quasi",
                                     "description": "The ID of the contact."
                                 }
                             ]
@@ -564,6 +564,142 @@
                         }
                     },
                     "response": []
+                },
+                {
+                    "name": "GET api\/v1\/cases\/{id}",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/cases\/:id",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/cases\/:id",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "ipsum",
+                                    "description": "The ID of the case."
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "PUT api\/v1\/cases\/{id}\/update",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/cases\/:id\/update",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/cases\/:id\/update",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "quia",
+                                    "description": "The ID of the case."
+                                }
+                            ]
+                        },
+                        "method": "PUT",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "DELETE api\/v1\/cases\/{id}\/delete",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/cases\/:id\/delete",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/cases\/:id\/delete",
+                            "variable": [
+                                {
+                                    "id": "id",
+                                    "key": "id",
+                                    "value": "deleniti",
+                                    "description": "The ID of the case."
+                                }
+                            ]
+                        },
+                        "method": "DELETE",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
+                },
+                {
+                    "name": "GET api\/v1\/cases",
+                    "request": {
+                        "url": {
+                            "host": "{{baseUrl}}",
+                            "path": "api\/v1\/cases",
+                            "query": [],
+                            "raw": "{{baseUrl}}\/api\/v1\/cases"
+                        },
+                        "method": "GET",
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application\/json"
+                            },
+                            {
+                                "key": "Accept",
+                                "value": "application\/json"
+                            }
+                        ],
+                        "body": null,
+                        "description": "",
+                        "auth": {
+                            "type": "noauth"
+                        }
+                    },
+                    "response": []
                 }
             ]
         },
@@ -593,7 +729,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"natus\"}"
+                            "raw": "{\"name\":\"voluptates\"}"
                         },
                         "description": "",
                         "auth": {
@@ -624,7 +760,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"eum\"}"
+                            "raw": "{\"name\":\"quidem\"}"
                         },
                         "description": "",
                         "auth": {
@@ -655,7 +791,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"odio\"}"
+                            "raw": "{\"title\":\"rem\"}"
                         },
                         "description": "",
                         "auth": {
@@ -686,7 +822,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"autem\"}"
+                            "raw": "{\"title\":\"magnam\"}"
                         },
                         "description": "",
                         "auth": {
@@ -717,7 +853,7 @@
                         ],
                         "body": {
                             "mode": "raw",
-                            "raw": "{\"name\":\"pariatur\"}"
+                            "raw": "{\"name\":\"nulla\"}"
                         },
                         "description": "",
                         "auth": {

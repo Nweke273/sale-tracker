@@ -1,6 +1,6 @@
 openapi: 3.0.3
 info:
-  title: Laravel
+  title: 'Sale Traker'
   description: ''
   version: 1.0.0
 servers:
@@ -26,31 +26,31 @@ paths:
                 salutation:
                   type: string
                   description: 'Must not be greater than 25 characters.'
-                  example: vsctcjbjdhqfjdq
+                  example: pbrfcwegkdkq
                 firstName:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: vfrmroftuojeegdczj
+                  example: nkiqfilgrrhubgqfy
                 lastName:
                   type: string
                   description: 'Must not be greater than 255 characters.'
-                  example: qodounxgn
+                  example: ueyveo
                 roleId:
                   type: integer
                   description: 'Must not be greater than 255.'
-                  example: 2
+                  example: 8
                 profileId:
                   type: integer
                   description: 'Must not be greater than 255.'
-                  example: 9
+                  example: 17
                 email:
                   type: string
                   description: 'Must be a valid email address. Must not be greater than 255 characters.'
-                  example: zion.okon@example.net
+                  example: veum.modesto@example.org
                 password:
                   type: string
                   description: ''
-                  example: velit
+                  example: perspiciatis
               required:
                 - salutation
                 - firstName
@@ -79,11 +79,11 @@ paths:
                 email:
                   type: string
                   description: 'Must be a valid email address.'
-                  example: dibbert.dedric@example.org
+                  example: demetrius04@example.com
                 password:
                   type: string
                   description: ''
-                  example: id
+                  example: aut
               required:
                 - email
                 - password
@@ -119,7 +119,7 @@ paths:
                 last_name:
                   type: string
                   description: 'Must not be greater than 50 characters.'
-                  example: butwpxutjpzcwcssshyhtjt
+                  example: ejfl
                 job_title_id:
                   type: string
                   description: ''
@@ -127,11 +127,11 @@ paths:
                 industry_id:
                   type: string
                   description: 'Must not be greater than 50 characters.'
-                  example: ozf
+                  example: acgoklbiqjnkrye
                 company:
                   type: string
                   description: 'Must not be greater than 50 characters.'
-                  example: wqyghwdsiobppoxruvdvl
+                  example: cqcwfpxanf
                 rating_id:
                   type: string
                   description: ''
@@ -218,7 +218,7 @@ paths:
         in: path
         name: id
         description: 'The ID of the lead.'
-        example: quis
+        example: recusandae
         required: true
         schema:
           type: string
@@ -253,7 +253,7 @@ paths:
                 last_name:
                   type: string
                   description: 'Must not be greater than 50 characters.'
-                  example: drybmtwvmnbcug
+                  example: drycbwe
                 job_title_id:
                   type: string
                   description: ''
@@ -261,11 +261,11 @@ paths:
                 industry_id:
                   type: string
                   description: 'Must not be greater than 50 characters.'
-                  example: bgpdat
+                  example: zqkxejzinjgre
                 company:
                   type: string
                   description: 'Must not be greater than 50 characters.'
-                  example: vxqdabrnwxycce
+                  example: tnuzzakqxswcdc
                 rating_id:
                   type: string
                   description: ''
@@ -332,7 +332,7 @@ paths:
         in: path
         name: id
         description: 'The ID of the lead.'
-        example: debitis
+        example: reprehenderit
         required: true
         schema:
           type: string
@@ -351,7 +351,7 @@ paths:
         in: path
         name: id
         description: 'The ID of the lead.'
-        example: fuga
+        example: corporis
         required: true
         schema:
           type: string
@@ -370,7 +370,7 @@ paths:
         in: path
         name: id
         description: 'The ID of the convert lead.'
-        example: est
+        example: natus
         required: true
         schema:
           type: string
@@ -389,7 +389,7 @@ paths:
         in: path
         name: id
         description: 'The ID of the account.'
-        example: occaecati
+        example: delectus
         required: true
         schema:
           type: string
@@ -408,7 +408,7 @@ paths:
         in: path
         name: id
         description: 'The ID of the account.'
-        example: ut
+        example: magnam
         required: true
         schema:
           type: string
@@ -427,7 +427,7 @@ paths:
         in: path
         name: id
         description: 'The ID of the account.'
-        example: temporibus
+        example: est
         required: true
         schema:
           type: string
@@ -456,7 +456,7 @@ paths:
         in: path
         name: id
         description: 'The ID of the contact.'
-        example: quis
+        example: quia
         required: true
         schema:
           type: string
@@ -475,7 +475,7 @@ paths:
         in: path
         name: id
         description: 'The ID of the contact.'
-        example: voluptas
+        example: molestias
         required: true
         schema:
           type: string
@@ -494,7 +494,7 @@ paths:
         in: path
         name: id
         description: 'The ID of the contact.'
-        example: ut
+        example: quasi
         required: true
         schema:
           type: string
@@ -502,6 +502,73 @@ paths:
     get:
       summary: ''
       operationId: getApiV1Contacts
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Lead
+      security: []
+  '/api/v1/cases/{id}':
+    get:
+      summary: ''
+      operationId: getApiV1CasesId
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Lead
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the case.'
+        example: ipsum
+        required: true
+        schema:
+          type: string
+  '/api/v1/cases/{id}/update':
+    put:
+      summary: ''
+      operationId: putApiV1CasesIdUpdate
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Lead
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the case.'
+        example: quia
+        required: true
+        schema:
+          type: string
+  '/api/v1/cases/{id}/delete':
+    delete:
+      summary: ''
+      operationId: deleteApiV1CasesIdDelete
+      description: ''
+      parameters: []
+      responses: {  }
+      tags:
+        - Lead
+      security: []
+    parameters:
+      -
+        in: path
+        name: id
+        description: 'The ID of the case.'
+        example: deleniti
+        required: true
+        schema:
+          type: string
+  /api/v1/cases:
+    get:
+      summary: ''
+      operationId: getApiV1Cases
       description: ''
       parameters: []
       responses: {  }
@@ -527,7 +594,7 @@ paths:
                 name:
                   type: string
                   description: ''
-                  example: natus
+                  example: voluptates
               required:
                 - name
       security: []
@@ -550,7 +617,7 @@ paths:
                 name:
                   type: string
                   description: ''
-                  example: eum
+                  example: quidem
               required:
                 - name
       security: []
@@ -570,12 +637,12 @@ paths:
             schema:
               type: object
               properties:
-                name:
+                title:
                   type: string
                   description: ''
-                  example: odio
+                  example: rem
               required:
-                - name
+                - title
       security: []
   /api/v1/create-profile:
     post:
@@ -593,12 +660,12 @@ paths:
             schema:
               type: object
               properties:
-                name:
+                title:
                   type: string
                   description: ''
-                  example: autem
+                  example: magnam
               required:
-                - name
+                - title
       security: []
   /api/v1/create-opportunity-type:
     post:
@@ -619,7 +686,7 @@ paths:
                 name:
                   type: string
                   description: ''
-                  example: pariatur
+                  example: nulla
               required:
                 - name
       security: []

@@ -26,11 +26,11 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: natus
+        example: voluptates
         type: string
         custom: []
     cleanBodyParameters:
-      name: natus
+      name: voluptates
     fileParameters: []
     responses: []
     responseFields: []
@@ -64,11 +64,11 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: eum
+        example: quidem
         type: string
         custom: []
     cleanBodyParameters:
-      name: eum
+      name: quidem
     fileParameters: []
     responses: []
     responseFields: []
@@ -98,15 +98,15 @@ endpoints:
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters:
-      name:
-        name: name
+      title:
+        name: title
         description: ''
         required: true
-        example: odio
+        example: rem
         type: string
         custom: []
     cleanBodyParameters:
-      name: odio
+      title: rem
     fileParameters: []
     responses: []
     responseFields: []
@@ -136,15 +136,15 @@ endpoints:
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters:
-      name:
-        name: name
+      title:
+        name: title
         description: ''
         required: true
-        example: autem
+        example: magnam
         type: string
         custom: []
     cleanBodyParameters:
-      name: autem
+      title: magnam
     fileParameters: []
     responses: []
     responseFields: []
@@ -178,11 +178,11 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: pariatur
+        example: nulla
         type: string
         custom: []
     cleanBodyParameters:
-      name: pariatur
+      name: nulla
     fileParameters: []
     responses: []
     responseFields: []
